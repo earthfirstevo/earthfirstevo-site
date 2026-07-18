@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Browser title & description -->
   <title>EarthFirst Evo — Environmental Property Documentation</title>
-  <meta name="description" content="EarthFirst Evo visits your property, observes conditions across the site, and builds a documented record that grows over time. Every property begins with an IDP — an Integrated Property Digest." />
+  <meta name="description" content="EarthFirst Evo visits your property, observes conditions across the site, and builds a documented record that grows over time. Every property begins with an assessment and your first Integrated Deliverable Package (IDP)." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://www.earthfirstevo.com/" />
@@ -19,7 +19,7 @@
   <meta property="og:url" content="https://www.earthfirstevo.com/" />
   <meta property="og:site_name" content="EarthFirst Evo" />
   <meta property="og:title" content="EarthFirst Evo — Environmental Property Documentation" />
-  <meta property="og:description" content="EarthFirst Evo documents environmental conditions across your property over time. Farms, nurseries, conservation land, municipalities. Your property record begins with an IDP." />
+  <meta property="og:description" content="EarthFirst Evo documents environmental conditions across your property over time. Farms, nurseries, conservation land, municipalities. Every property begins with an assessment and your first Integrated Deliverable Package (IDP)." />
   <meta property="og:image" content="https://www.earthfirstevo.com/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -28,7 +28,7 @@
   <!-- Twitter / X card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="EarthFirst Evo — Environmental Property Documentation" />
-  <meta name="twitter:description" content="EarthFirst Evo documents environmental conditions across your property over time. Every property begins with an IDP." />
+  <meta name="twitter:description" content="EarthFirst Evo documents environmental conditions across your property over time. Every property begins with an assessment and your first Integrated Deliverable Package (IDP)." />
   <meta name="twitter:image" content="https://www.earthfirstevo.com/og-image.png" />
 
   <!-- Theme color (browser chrome on mobile) -->
@@ -537,6 +537,67 @@
 
     .footer-right a:hover { color: var(--accent); }
 
+    /* ── PROCESS FLOW ── */
+    .process-flow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    .process-step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 16px 24px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .process-step-accent {
+      border-color: var(--accent);
+      background: var(--accent-lt);
+    }
+
+    .process-step-soft {
+      border: 1px dashed var(--border);
+      background: transparent;
+    }
+
+    .process-step-num {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .process-step-soft .process-step-num { color: var(--text-muted); }
+
+    .process-step-label {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .process-step-soft .process-step-label { color: var(--text-muted); }
+    .process-step-accent .process-step-label { color: var(--accent); }
+
+    .process-arrow {
+      font-size: 18px;
+      line-height: 1;
+      color: var(--text-muted);
+      padding: 10px 0;
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 0 20px; }
@@ -609,7 +670,7 @@
       <h2 class="section-heading">A documented record of your property, built over time.</h2>
       <p class="section-body">We visit your property, observe conditions across the site, and produce a structured record of what we find. Each return visit adds to that record. Over time, a clear picture of your property's environmental history takes shape.</p>
       <div class="idp-callout">
-        Every property record begins with an <strong>IDP</strong> — the EarthFirst standard for documented property history. An Internal Discoverable Presence: a structured record that grows with each visit, and becomes the environmental history of your property over time.
+        Every property record begins with an <strong>IDP</strong> — your <strong>Integrated Deliverable Package</strong>: the professional documentation you receive after we assess your property. It is a structured record that grows with each return visit, becoming the environmental history of your property over time.
       </div>
     </div>
   </section>
@@ -671,35 +732,43 @@
     </div>
   </section>
 
-  <!-- CONTINUITY TIMELINE -->
-  <section id="timeline" style="padding: 72px 32px; background: var(--bg);">
-    <div class="container" style="display: flex; justify-content: center;">
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 0;">
+  <!-- THE PROCESS -->
+  <section id="process" style="padding: 80px 32px; background: var(--bg);">
+    <div class="container">
+      <p class="section-label" style="text-align:center;">The Process</p>
+      <div class="divider" style="margin-left:auto; margin-right:auto;"></div>
+      <h2 class="section-heading" style="text-align:center; max-width: 640px; margin-left:auto; margin-right:auto;">The assessment is the service. The documentation is what you receive.</h2>
+      <p class="section-body" style="text-align:center; margin: 0 auto 48px;">A simple, repeatable workflow that builds your property's environmental record over time.</p>
 
-        <div style="font-family: var(--serif); font-size: 15px; color: var(--text); font-weight: 500; padding: 12px 28px; border: 1px solid var(--border); border-radius: 6px; background: var(--white); letter-spacing: 0.01em;">Your Property</div>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <div class="process-step-label">Assessment</div>
+        </div>
+        <div class="process-arrow" aria-hidden="true">↓</div>
 
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
-        <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent);"></div>
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <div class="process-step-label">Documentation</div>
+        </div>
+        <div class="process-arrow" aria-hidden="true">↓</div>
 
-        <div style="font-family: var(--serif); font-size: 15px; color: var(--accent); font-weight: 500; padding: 12px 28px; border: 1px solid var(--accent); border-radius: 6px; background: var(--accent-lt); letter-spacing: 0.01em;">IDP Established</div>
+        <div class="process-step process-step-accent">
+          <div class="process-step-num">3</div>
+          <div class="process-step-label">Integrated Deliverable Package</div>
+        </div>
+        <div class="process-arrow" aria-hidden="true">↓</div>
 
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
-        <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent);"></div>
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
+        <div class="process-step">
+          <div class="process-step-num">4</div>
+          <div class="process-step-label">Continuity</div>
+        </div>
+        <div class="process-arrow" aria-hidden="true">↓</div>
 
-        <div style="font-family: var(--serif); font-size: 15px; color: var(--text); font-weight: 500; padding: 12px 28px; border: 1px solid var(--border); border-radius: 6px; background: var(--white); letter-spacing: 0.01em;">Ongoing Documentation</div>
-
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
-        <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--accent);"></div>
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
-
-        <div style="font-family: var(--serif); font-size: 15px; color: var(--text); font-weight: 500; padding: 12px 28px; border: 1px solid var(--border); border-radius: 6px; background: var(--white); letter-spacing: 0.01em;">Continued Documentation</div>
-
-        <div style="width: 1px; height: 32px; background: var(--border);"></div>
-        <div style="width: 6px; height: 6px; border-radius: 50%; background: var(--text-muted);"></div>
-
-        <div style="font-family: var(--serif); font-size: 15px; color: var(--text-muted); font-weight: 500; padding: 12px 28px; border: 1px dashed var(--border); border-radius: 6px; background: transparent; letter-spacing: 0.01em; margin-top: 8px;">Growing Over Time</div>
+        <div class="process-step process-step-soft">
+          <div class="process-step-num">5</div>
+          <div class="process-step-label">Growing Environmental Record</div>
+        </div>
       </div>
     </div>
   </section>
@@ -707,29 +776,30 @@
   <!-- WHERE YOUR PROPERTY RECORD BEGINS -->
   <section id="ways">
     <div class="container-wide">
-      <p class="section-label">Where Your Property Record Begins</p>
+      <p class="section-label">Assessments &amp; Documentation</p>
       <div class="divider"></div>
-      <h2 class="section-heading">Every IDP begins with a first visit. Where it goes from there is up to you.</h2>
+      <h2 class="section-heading">You commission an assessment. You receive a documented record.</h2>
+      <p class="section-body" style="margin-bottom: 12px;">Every assessment produces an Integrated Deliverable Package (IDP) — the professional documentation of your property. Longer engagements simply mean more visits, more observation, and a more complete record over time.</p>
       <div class="tier-grid">
 
         <div class="tier-card">
-          <p class="tier-name">Snapshot IDP</p>
+          <p class="tier-name">Initial Property Assessment</p>
           <p class="tier-price">$500</p>
-          <p class="tier-desc">A documented baseline of your property. A single on-site visit that captures current conditions and produces your first IDP record.</p>
+          <p class="tier-desc">We visit your property, establish a documented environmental baseline, and deliver your first Integrated Deliverable Package (IDP). This becomes the starting point for your property's environmental record.</p>
           <a href="#contact" class="tier-link">Get started →</a>
         </div>
 
         <div class="tier-card featured">
-          <p class="tier-name">30-Day IDP</p>
+          <p class="tier-name">30-Day Continuity Assessment</p>
           <p class="tier-price">$5,000</p>
-          <p class="tier-desc">Documentation and continuity over a 30-day observation period. Your IDP grows through multiple visits, building a record that reflects how your property changes over time.</p>
+          <p class="tier-desc">We continue documenting your property over a 30-day period, returning at scheduled intervals to observe environmental changes. Each visit expands your property's Integrated Deliverable Package and builds a clearer picture of how conditions evolve over time.</p>
           <a href="#contact" class="tier-link">Get started →</a>
         </div>
 
         <div class="tier-card">
-          <p class="tier-name">90-Day IDP</p>
+          <p class="tier-name">90-Day Continuity Assessment</p>
           <p class="tier-price">$15,000</p>
-          <p class="tier-desc">Documentation and continuity over a 90-day observation period. The most complete picture of your property's environmental conditions across seasons and weather events.</p>
+          <p class="tier-desc">A comprehensive 90-day documentation program that captures seasonal trends, recurring environmental patterns, and long-term property behavior. The resulting Integrated Deliverable Package becomes a substantial environmental record of your property.</p>
           <a href="#contact" class="tier-link">Get started →</a>
         </div>
 
