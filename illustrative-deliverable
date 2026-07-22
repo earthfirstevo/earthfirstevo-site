@@ -1,0 +1,702 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EarthFirst Evo | Illustrative Deliverable — Environmental Continuity Assessment</title>
+  <meta name="description" content="An illustrative example of an EarthFirst Evo Integrated Deliverable Package — a documented environmental baseline of a real property, showing the atmospheric context, assessment grid, anchor evidence, and continuity narrative a client receives." />
+
+  <link rel="canonical" href="https://www.earthfirstevo.com/illustrative-deliverable" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233A6B47'/><circle cx='16' cy='16' r='8' fill='%23F7F4EF'/><circle cx='16' cy='16' r='5' fill='%233A6B47'/></svg>" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.earthfirstevo.com/illustrative-deliverable" />
+  <meta property="og:site_name" content="EarthFirst Evo" />
+  <meta property="og:title" content="EarthFirst Evo — Illustrative Deliverable" />
+  <meta property="og:description" content="An illustrative example of an Integrated Deliverable Package — the environmental documentation a client receives after an EarthFirst assessment." />
+  <meta name="theme-color" content="#3A6B47" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #F7F4EF;
+      --bg-alt:    #EFECE6;
+      --bg-dark:   #1C2B1E;
+      --bg-panel:  #0f172a;
+      --text:      #1C2B1E;
+      --text-mid:  #4A5C4D;
+      --text-muted:#7A8C7D;
+      --accent:    #3A6B47;
+      --accent-lt: #EAF2EC;
+      --border:    #DDD8CF;
+      --white:     #FFFFFF;
+      --serif:     'Lora', Georgia, serif;
+      --sans:      'Inter', system-ui, sans-serif;
+      --max:       860px;
+      --max-wide:  1100px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(247, 244, 239, 0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+    }
+
+    .nav-wordmark {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+    .nav-wordmark span { color: var(--accent); }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: background 0.2s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: #2d5438; }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--accent);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      letter-spacing: 0.01em;
+      transition: background 0.2s ease;
+      cursor: pointer;
+    }
+    .btn-outline:hover { background: var(--accent-lt); }
+
+    section { padding: 96px 32px; }
+    .container { max-width: var(--max); margin: 0 auto; }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .section-heading {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.5vw, 38px);
+      font-weight: 400;
+      line-height: 1.2;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 28px;
+    }
+
+    .section-body {
+      font-size: 17px;
+      line-height: 1.8;
+      color: var(--text-mid);
+      max-width: 620px;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--accent);
+      margin-bottom: 40px;
+    }
+
+    /* ── DOCUMENT COVER ── */
+    #cover {
+      padding-top: 140px;
+      padding-bottom: 64px;
+      background: var(--bg);
+    }
+
+    .doc-eyebrow {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    .doc-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 4.5vw, 46px);
+      font-weight: 400;
+      line-height: 1.15;
+      color: var(--text);
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    .doc-subtitle {
+      font-family: var(--sans);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .doc-type {
+      font-size: 15px;
+      color: var(--text-mid);
+      margin-bottom: 36px;
+    }
+
+    /* ── CONSTELLATION PANEL ── */
+    .grid-panel {
+      background: var(--bg-panel);
+      border-radius: 14px;
+      padding: 36px;
+      margin: 0 auto 40px;
+      max-width: 520px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-panel svg { width: 100%; max-width: 440px; height: auto; }
+
+    .doc-meta {
+      display: flex;
+      gap: 48px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+    }
+
+    .doc-meta-item .meta-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 4px;
+    }
+
+    .doc-meta-item .meta-value {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    /* ── CONTENT SECTIONS ── */
+    .doc-section {
+      padding: 80px 32px;
+    }
+
+    .doc-section.alt { background: var(--bg-alt); }
+
+    .doc-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 28px 32px;
+      margin-bottom: 16px;
+    }
+
+    .doc-card-heading {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--text);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .doc-card-icon {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .doc-card-body {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-mid);
+    }
+
+    .doc-bullets {
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .doc-bullets li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--text-mid);
+      padding-left: 18px;
+      position: relative;
+      margin-bottom: 4px;
+    }
+
+    .doc-bullets li::before {
+      content: "•";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    /* ── ANCHOR CARDS ── */
+    .anchor-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .anchor-card-header {
+      background: var(--bg-alt);
+      padding: 14px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .anchor-id {
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .anchor-name {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .anchor-body {
+      padding: 24px;
+    }
+
+    .terrain-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: #fef3c7;
+      color: #92400e;
+      margin-bottom: 16px;
+    }
+
+    .evidence-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    .evidence-table td {
+      padding: 7px 0;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .evidence-table td:first-child { color: var(--text-muted); width: 45%; }
+    .evidence-table td:last-child { color: var(--text); font-weight: 500; }
+
+    /* ── DEBRIEF BADGES ── */
+    .debrief-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .debrief-badge {
+      flex: 1;
+      background: var(--accent-lt);
+      border: 1px solid rgba(58, 107, 71, 0.15);
+      border-radius: 8px;
+      padding: 14px 20px;
+    }
+
+    .debrief-badge .badge-label {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .debrief-badge .badge-value {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .narrative {
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--text);
+      font-style: italic;
+    }
+
+    .closing-note {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .closing-note p {
+      font-size: 16px;
+      color: var(--text);
+      font-weight: 500;
+      line-height: 1.7;
+    }
+
+    .closing-note .footnote {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-top: 10px;
+      font-family: var(--sans);
+      font-style: normal;
+      font-weight: 400;
+    }
+
+    /* ── CTA SECTION ── */
+    #cta {
+      background: var(--bg-dark);
+      color: var(--white);
+      text-align: center;
+    }
+
+    #cta .section-label { color: rgba(255,255,255,0.45); }
+    #cta .section-heading { color: var(--white); max-width: 520px; margin: 0 auto 24px; }
+
+    .btn-light {
+      display: inline-block;
+      background: var(--white);
+      color: var(--bg-dark);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 28px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.01em;
+      transition: opacity 0.2s ease;
+    }
+    .btn-light:hover { opacity: 0.88; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 36px 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-wordmark {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .footer-wordmark span { color: var(--accent); }
+
+    .footer-right {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: right;
+    }
+
+    .footer-right a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+    .footer-right a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 20px; }
+      section { padding: 64px 20px; }
+      .doc-section { padding: 56px 20px; }
+      #cover { padding: 120px 20px 48px; }
+      .doc-meta { gap: 32px; }
+      .debrief-row { flex-direction: column; gap: 12px; }
+      footer { flex-direction: column; align-items: flex-start; padding: 28px 20px; }
+      .footer-right { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="/" class="nav-wordmark">EarthFirst <span>Evo</span></a>
+    <a href="/#contact" class="btn-primary">Start your IDP →</a>
+  </nav>
+
+  <!-- ── COVER ── -->
+  <section id="cover">
+    <div class="container">
+      <p class="doc-eyebrow">Environmental Continuity</p>
+      <h1 class="doc-title">EarthFirst Evo</h1>
+      <p class="doc-subtitle">Illustrative Deliverable</p>
+      <p class="doc-type">Environmental Continuity Assessment</p>
+
+      <!-- Assessment Grid constellation on dark panel -->
+      <div class="grid-panel">
+        <svg viewBox="0 0 220 180" role="img" aria-label="Assessment Grid constellation">
+          <!-- Property boundary polygon (faint fill) -->
+          <path d="M 20 30 L 60 20 L 110 25 L 155 15 L 195 40 L 200 85 L 175 120 L 130 135 L 80 140 L 35 125 L 15 85 Z"
+                fill="rgba(52,211,153,0.10)" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4 4" stroke-linejoin="round" />
+          <!-- Anchor points -->
+          <circle cx="20" cy="30" r="7" fill="#34d399" />
+          <circle cx="60" cy="20" r="5" fill="#60a5fa" />
+          <circle cx="110" cy="25" r="5" fill="#60a5fa" />
+          <circle cx="155" cy="15" r="5" fill="#60a5fa" />
+          <circle cx="195" cy="40" r="5" fill="#60a5fa" />
+          <circle cx="200" cy="85" r="5" fill="#60a5fa" />
+          <circle cx="175" cy="120" r="5" fill="#60a5fa" />
+          <circle cx="130" cy="135" r="5" fill="#60a5fa" />
+          <circle cx="80" cy="140" r="5" fill="#60a5fa" />
+          <circle cx="35" cy="125" r="5" fill="#60a5fa" />
+          <circle cx="15" cy="85" r="5" fill="#60a5fa" />
+          <!-- Labels -->
+          <text x="28" y="34" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P1</text>
+          <text x="68" y="24" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P2</text>
+          <text x="118" y="29" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P3</text>
+          <text x="163" y="19" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P4</text>
+          <text x="203" y="44" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P5</text>
+          <text x="184" y="89" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P6</text>
+          <text x="155" y="124" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P7</text>
+          <text x="110" y="139" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P8</text>
+          <text x="60" y="144" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P9</text>
+          <text x="15" y="129" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P10</text>
+          <text x="-5" y="89" font-size="11" font-family="monospace" font-weight="700" fill="#e2e8f0">P11</text>
+        </svg>
+      </div>
+
+      <div class="doc-meta">
+        <div class="doc-meta-item">
+          <div class="meta-label">Property</div>
+          <div class="meta-value">EarthFirst HQ</div>
+        </div>
+        <div class="doc-meta-item">
+          <div class="meta-label">Organization</div>
+          <div class="meta-value">EarthFirst Evo</div>
+        </div>
+        <div class="doc-meta-item">
+          <div class="meta-label">Region</div>
+          <div class="meta-value">New Jersey</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ATMOSPHERIC CONTEXT ── -->
+  <section class="doc-section alt">
+    <div class="container">
+      <p class="section-label">Atmospheric Context</p>
+      <div class="divider"></div>
+      <h2 class="section-heading">Seven-day regional timeline through today's First Light.</h2>
+      <p class="section-body" style="margin-bottom: 32px;">Regional context is sourced from field observations. Today's evidence is drawn from the property's Assessment Grid. As continuity grows, regional context is progressively replaced by the property's own environmental history.</p>
+
+      <div class="doc-card">
+        <div class="doc-card-heading"><span class="doc-card-icon"></span>Atmospheric Summary</div>
+        <div class="doc-card-body">
+          <ul class="doc-bullets">
+            <li>Mixed cloud cover throughout the previous week</li>
+            <li>Winds remained generally southerly (light)</li>
+            <li>Humidity remained stable through the week</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-heading"><span class="doc-card-icon"></span>Landscape Summary</div>
+        <div class="doc-card-body">
+          <ul class="doc-bullets">
+            <li>Drainage remained stable</li>
+            <li>No persistent standing water observed</li>
+            <li>Surface moisture intermittent across the period</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-heading"><span class="doc-card-icon"></span>Soil Summary</div>
+        <div class="doc-card-body">
+          <ul class="doc-bullets">
+            <li>Soil remained penetrable</li>
+            <li>Moisture moderate</li>
+            <li>No saturation detected</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doc-card">
+        <div class="doc-card-heading"><span class="doc-card-icon"></span>Biological Summary</div>
+        <div class="doc-card-body">
+          <ul class="doc-bullets">
+            <li>Wildlife remained active</li>
+            <li>Vegetation perked, no unusual stress</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SELECTED ANCHOR EVIDENCE ── -->
+  <section class="doc-section">
+    <div class="container">
+      <p class="section-label">Selected Anchor Evidence</p>
+      <div class="divider"></div>
+      <h2 class="section-heading">Two anchors shown in full detail.</h2>
+      <p class="section-body" style="margin-bottom: 32px;">Each anchor point is a repeatable, GPS-anchored location the assessor returns to on every visit. This is where environmental change becomes measurable over time.</p>
+
+      <div class="anchor-card">
+        <div class="anchor-card-header">
+          <span class="anchor-id">P11</span>
+          <span class="anchor-name">Apple Tree</span>
+        </div>
+        <div class="anchor-body">
+          <div class="terrain-badge">⛰ 2° · S · Gentle</div>
+          <table class="evidence-table">
+            <tr><td>Sun Exposure</td><td>Full sun</td></tr>
+            <tr><td>Soil Surface</td><td>Moist</td></tr>
+            <tr><td>Drainage</td><td>None</td></tr>
+            <tr><td>Wind Exposure</td><td>Exposed</td></tr>
+            <tr><td>Vegetative Growth</td><td>Perked</td></tr>
+            <tr><td>Storm Impact</td><td>None</td></tr>
+            <tr><td>Standing Water</td><td>No</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="anchor-card">
+        <div class="anchor-card-header">
+          <span class="anchor-id">P5</span>
+          <span class="anchor-name">End of Right Side Vegetative Hallway</span>
+        </div>
+        <div class="anchor-body">
+          <div class="terrain-badge">⛰ 3° · SE · Gentle</div>
+          <table class="evidence-table">
+            <tr><td>Sun Exposure</td><td>Partial</td></tr>
+            <tr><td>Soil Surface</td><td>Dry</td></tr>
+            <tr><td>Drainage</td><td>Visible flow</td></tr>
+            <tr><td>Wind Exposure</td><td>Partial</td></tr>
+            <tr><td>Vegetative Growth</td><td>Stable</td></tr>
+            <tr><td>Storm Impact</td><td>None</td></tr>
+            <tr><td>Standing Water</td><td>No</td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── DEBRIEF AND NARRATIVE ── -->
+  <section class="doc-section alt">
+    <div class="container">
+      <p class="section-label">Debrief and Narrative</p>
+      <div class="divider"></div>
+      <h2 class="section-heading">Environmental debrief and continuity narrative.</h2>
+
+      <div class="debrief-row">
+        <div class="debrief-badge">
+          <div class="badge-label">Continuity Intent</div>
+          <div class="badge-value">Wants Continuity</div>
+        </div>
+        <div class="debrief-badge">
+          <div class="badge-label">Selected Cadence</div>
+          <div class="badge-value">Weekly</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 28px;">
+        <div class="doc-card-heading" style="margin-bottom: 12px;"><span class="doc-card-icon"></span>Environmental Narrative</div>
+        <p class="narrative">Over the assessment period, the property showed a stable drainage pattern with intermittent surface moisture responding to regional weather. The southern-facing apple tree anchor remained in full sun with perked vegetation, while the vegetative hallway on the right side showed partial shade and visible drainage flow. No storm impacts were observed during the baseline window. The property is well-positioned for weekly continuity monitoring, with clear anchor points that will reveal how conditions shift as the season progresses.</p>
+      </div>
+
+      <div class="closing-note">
+        <p>This is the starting point. Every future visit compares against this baseline so change becomes easier to recognize through time.</p>
+        <p class="footnote">EarthFirst Evo · Illustrative Deliverable · Environmental Continuity Assessment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section id="cta">
+    <div class="container">
+      <p class="section-label">Your Property</p>
+      <h2 class="section-heading">Every property begins with an assessment.</h2>
+      <a href="/#contact" class="btn-light">Start the Conversation →</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="/" class="footer-wordmark">EarthFirst <span>Evo</span></a>
+    <div class="footer-right">
+      <a href="mailto:contact@earthfirstevo.com">contact@earthfirstevo.com</a><br />
+      <span>© 2025 EarthFirst Evo. All rights reserved.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
